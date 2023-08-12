@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Gallery</title>
+
+        <style>
+        #main {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            background-color: rgb(227, 242, 242);
+        }
+
+        a {
+            padding: 50px;
+            text-decoration: none;
+        }
+
+        .option {
+            margin-top: 30px;
+        }
+
+        
+        #head {
+            padding-left: 50px;
+            margin-top: 5px;
+            font-family: monospace;
+            font-size: 16px;
+        }
+
+        .gallery{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .gallery img{
+            height: 300px;
+            width: 330px;
+            border: 2px solid;
+            border-radius: 5px;
+        }
+
+        #button{
+            display: flex;
+            margin-top: none;
+            justify-content: center;
+            
+        }
+
+        .to-know-us{
+            background-color: blue;
+            color: white;
+            padding: 17px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .to-know-us:hover{
+            background-color: 45a049;
+            
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="head">
+                <h2>React Developer</h2>
+            </div>
+            <div class="option">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Page.html">Page</a>
+                <button>Join Class</button>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <img src="photo1.avif">
+            <img src="photo2.jpg">
+            <img src="photo3.jpg">
+            <img src="photo4.jpg">
+            <img src="photo5.jpg">
+            <img src="photo6.jpg">
+            <img src="photo7.jpg">
+            <img src="photo8.jpg">
+        </div>
+        <div id="button">
+            <a href="contact.html" <button class="to-know-us">Get to know us better!</button></a>
+        </div>
+    </body>
+</html>
